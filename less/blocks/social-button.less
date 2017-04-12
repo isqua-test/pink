@@ -1,15 +1,42 @@
 .social-button {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  margin: 6px;
+  margin-top: 40px;
 
 }
 
 .social-button--twitter {
-
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social-button--facebook {
-
+  background-image: url("../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social-button--youtube {
+  background-image: url("../img/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+@media @tablet-widths {
+  .social-button {
+    margin: 7px;
+    margin-top: 5px;
+  }
+}
+
+@media @desktop-widths {
+  .social-button {
+    margin: 7px;
+    margin-top: 62px;
+  }
 }

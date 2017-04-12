@@ -1,0 +1,98 @@
+.user-photo {
+  margin-bottom: 19px;
+}
+
+.user-photo__image img{
+  display: block;
+}
+
+.user-photo__image--margin {
+  margin-bottom: 21px;
+}
+
+.user-photo__image--margin-down {
+  margin-bottom: 12px;
+}
+
+.user-photo__container {
+}
+
+.user-photo__image--of-the-day {
+  position: relative;
+  margin-top: 50px;
+}
+
+.user-photo__image--of-the-day img{
+  display: block;
+}
+
+.user-photo__image--of-the-day::after {
+  position: absolute;
+  content: "панорама дня";
+  color: @white;
+  top: 0px;
+  right: 20px;
+  font-size: 12px;
+  line-height: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  background: @pink;
+  width: 140px;
+  height: 36px;
+}
+
+@media @tablet-widths {
+  .user-photo {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .user-photo--of-the-day {
+    margin-bottom: 49px;
+    width: auto;
+  }
+
+  .user-photo__image {
+    height: 300px; //временно
+  }
+
+  .user-photo__image--of-the-day::after {
+    top: 56px;
+    left: 520px;
+  }
+
+  .user-photo__image--of-the-day {
+    height: 508px; //временно
+    width: 700px;
+    margin-bottom: 0px;
+    margin-top: 48px;
+  }
+}
+
+@media @desktop-widths {
+  .user-photo__image--of-the-day::after {
+    top: 55px;
+    left: 930px;
+  }
+
+  .user-photo {
+    width: 300px;
+    margin-bottom: 54px;
+  }
+
+  .user-photo--of-the-day {
+    margin-bottom: 50px;
+    width: auto;
+  }
+
+  .user-photo__image {
+    height: 400px; //временно
+  }
+
+  .user-photo__image--of-the-day {
+    width: 1200px;
+    height: 506px;
+    margin-bottom: 0px;
+  }
+}
